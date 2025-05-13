@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Questionário Final</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>AuTomato</h1>
+  <p>Uma abordagem formativa que une o método Pomodoro à reflexão sobre foco, motivação e produtividade.</p>
+</header>
+
+  <main>
+    <h1>Depois do Pomodoro</h1>
+    <form id="pos-form">
+      <label for="focoFinal">Como está seu foco agora?</label>
+      <input type="text" id="focoFinal" required>
+
+      <label for="comentarios">Comentários</label>
+      <textarea id="comentarios"></textarea>
+
+      <h2>Avalie o progresso das tarefas realizadas</h2>
+      <div class="tasks">
+        <label for="task1">Tarefa 1: <span id="val1">0</span>%</label>
+        <input type="range" id="task1" name="task1" min="0" max="100" value="0" oninput="val1.innerText = this.value">
+        <label for="task2">Tarefa 2: <span id="val2">0</span>%</label>
+        <input type="range" id="task2" name="task2" min="0" max="100" value="0" oninput="val2.innerText = this.value">
+        <label for="task3">Tarefa 3: <span id="val3">0</span>%</label>
+        <input type="range" id="task3" name="task3" min="0" max="100" value="0" oninput="val3.innerText = this.value">
+        <label for="task4">Tarefa 4: <span id="val4">0</span>%</label>
+        <input type="range" id="task4" name="task4" min="0" max="100" value="0" oninput="val4.innerText = this.value">
+        <label for="task5">Tarefa 5: <span id="val5">0</span>%</label>
+        <input type="range" id="task5" name="task5" min="0" max="100" value="0" oninput="val5.innerText = this.value">
+        <label for="task6">Tarefa 6: <span id="val6">0</span>%</label>
+        <input type="range" id="task6" name="task6" min="0" max="100" value="0" oninput="val6.innerText = this.value">
+        <label for="task7">Tarefa 7: <span id="val7">0</span>%</label>
+        <input type="range" id="task7" name="task7" min="0" max="100" value="0" oninput="val7.innerText = this.value">
+        <label for="task8">Tarefa 8: <span id="val8">0</span>%</label>
+        <input type="range" id="task8" name="task8" min="0" max="100" value="0" oninput="val8.innerText = this.value">
+      </div>
+
+      <button type="submit">Enviar Dados</button>
+    </form>
+  </main>
+  <script src="js/pos.js"></script>
+</body>
+</html>
